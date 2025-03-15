@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Flask Project</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/logo.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur mon projet Flask !</h1>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Flask" class="logo">
+        <p>Voici une application simple Flask avec un joli design.</p>
+        <p>Vous pouvez consulter la documentation en cliquant sur le lien ci-dessous.</p>
+        <button class="cta-button" onclick="window.open('https://flask.palletsprojects.com/en/stable/', '_blank');">Voir la documentation</button>
+
+    </div>
+</body>
+</html>
